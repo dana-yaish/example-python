@@ -1,5 +1,5 @@
 from .calculator import Calculator
-
+from .src.errors import multiply
 
 def test_add():
     assert Calculator.add(1, 2) == 3.0
@@ -16,12 +16,12 @@ def test_add():
 #     assert Calculator.subtract(2.0, 0.0) == 2.0
 #     assert Calculator.subtract(-4, 2.0) == -6.0
 
-# def test_multiply():
-#     assert Calculator.multiply(1, 2) == 2.0
-#     assert Calculator.multiply(1.0, 2.0) == 2.0
-#     assert Calculator.multiply(0, 2.0) == 0.0
-#     assert Calculator.multiply(2.0, 0.0) == 0.0
-#     assert Calculator.multiply(-4, 2.0) == -8.0
+def test_multiply():
+    assert multiply(1, 2) == 2.0
+    assert multiply(1.0, 2.0) == 2.0
+    assert multiply(0, 2.0) == 0.0
+    assert multiply(2.0, 0.0) == 0.0
+    assert multiply(-4, 2.0) == -8.0
 
 def test_trivial():
     assert True
