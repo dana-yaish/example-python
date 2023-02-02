@@ -5,5 +5,4 @@ profiling:
 comment:
   show_critical_paths: true
 
-ignore:
-  - "**/errors*.py"
+
