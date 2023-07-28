@@ -19,3 +19,4 @@ class Calculator:
 
     def subtract2(x, y,z):
         return x - y - z
+    
