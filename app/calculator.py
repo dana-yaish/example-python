@@ -13,3 +13,9 @@ class Calculator:
         if y == 0:
             return 'Cannot divide by 0'
         return x * 1.0 / y
+
+    def add2(x,y,z):
+        return x+y+z
+
+    def subtract2(x, y,z):
+        return x - y - z
